@@ -1,0 +1,10 @@
+nav{
+    width: 100%;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+
+}
