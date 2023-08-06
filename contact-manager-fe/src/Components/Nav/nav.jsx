@@ -1,4 +1,4 @@
-import './style.css';
+import './nav.css';
 import { useNavigate } from 'react-router-dom';
 const Nav = () => {
     const navigator = useNavigate();
