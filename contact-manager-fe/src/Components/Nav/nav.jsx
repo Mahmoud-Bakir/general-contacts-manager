@@ -1,16 +1,16 @@
 import './style.css';
-import {useNavigate} from 'react-router-dom';
-const nav = () => {
+import { useNavigate } from 'react-router-dom';
+const Nav = () => {
     const navigator = useNavigate();
     const addNavigation = () => {
         navigator('/add');
     }
     return (
         <nav>
-                <h1>Welcome</h1>
-                <a href="#mission" >Our Mission</a>
+                <p>Welcome to the Contacts website</p>
+                <button onClick={addNavigation}> Add a contact</button>
 
         </nav>
     );
 }
-export default nav;
+export default Nav;
