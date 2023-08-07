@@ -32,7 +32,7 @@ const Form = () => {
         data.append("number",number)
         data.append("altitude",altitude)
         data.append("longitude",longitude)
-        axios.post("http://127.0.0.1:8000/api/addContact",data)
+        axios.post('http://127.0.0.1:8000/api/add',data)
         .then((res) => {
            console.log(res)
            window.location.href="http://localhost:3000/"     
@@ -70,7 +70,7 @@ const Form = () => {
                   <br />
                   <div className='footer'>
                     <button onClick={goBack}>Go back</button>
-                    <button onSubmit={handleSubmit}>Add contact</button>
+                    <button onClick={handleSubmit}>Add contact</button>
                   </div>
                 
                

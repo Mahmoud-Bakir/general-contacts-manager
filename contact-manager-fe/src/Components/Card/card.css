@@ -1,0 +1,13 @@
+.flex-card{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    width: 30%;
+    height: 300px;
+    gap: 10px;
+    background-color:rgb(222, 222, 222);
+    padding: 0.5rem 0.25rem;
+    border:1px solid black;
+
+}
