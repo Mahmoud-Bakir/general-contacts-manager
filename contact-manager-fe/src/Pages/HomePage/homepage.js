@@ -3,10 +3,11 @@ import CardsContainer from '../../Components/CardsContainer/cardscontainer';
 import axios from "axios"
 import { useEffect } from 'react';
 import { useState } from 'react';
+import MyMap from '../../Components/Map/map';
 
 const HomePage = () => {
     const [contacts, setContacts] = useState([]);
-    
+
     useEffect(() => {
         axios.get("http://localhost:8000/api/retrieve")
           .then((res) => {
@@ -21,6 +22,8 @@ const HomePage = () => {
         <div>
             <Nav/>
             <CardsContainer cards={contacts}/>
+            <MyMap locations={contacts}/>
+            
 
         </div>
     );
