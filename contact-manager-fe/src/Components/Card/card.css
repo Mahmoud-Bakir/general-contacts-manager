@@ -8,6 +8,13 @@
     gap: 10px;
     background-color:rgb(222, 222, 222);
     padding: 0.5rem 0.25rem;
-    border:1px solid black;
+    cursor: pointer;
+    border-radius: 10px;
 
+}
+span{
+    font-size: x-large;
+}
+.title{
+    color: rgb(0, 208, 0);
 }
